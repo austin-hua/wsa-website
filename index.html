@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>World Space Alliance | 國際太空聯盟 - Space for Everyone</title>
+  <meta name="description" content="The World Space Alliance (WSA) is a global organization dedicated to democratizing space exploration, training the next generation of astronauts from all nations.">
+  <meta name="keywords" content="World Space Alliance, 國際太空聯盟, Space exploration, Astronaut training, Civil astronauts, Open-source aerospace">
+  
+  <!-- Favicon (Fallback) -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Twinkling Starry Canvas Background -->
+  <canvas id="space-canvas"></canvas>
+  <div class="cosmic-nebula"></div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container">
+      <a href="#home" class="logo-container">
+        <img src="assets/logo.jpg" alt="WSA Logo" class="logo-img">
+        <div class="logo-title-group">
+          <span class="logo-text gradient-text">WSA</span>
+          <span class="logo-sub">WORLD SPACE ALLIANCE</span>
+        </div>
+      </a>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="active" data-i18n="nav_home">Home</a></li>
+          <li><a href="#mission" data-i18n="nav_mission">Mission</a></li>
+          <li><a href="#pathway" data-i18n="nav_pathway">Pathway</a></li>
+          <li><a href="#portal" data-i18n="nav_portal">Candidate Portal</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="lang-btn" class="lang-toggle" aria-label="Toggle Language">🌐 繁中</button>
+        <a href="#portal" class="btn btn-secondary btn-glow" style="padding: 0.5rem 1.2rem; font-size: 0.85rem; border-radius: 20px;">
+          <span data-i18n="btn_apply">Join Candidate Pool</span>
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <img src="assets/hero_bg.png" alt="Cosmic Space Station" class="hero-background">
+      <div class="hero-grid-overlay"></div>
+      <div class="container">
+        <div class="hero-content reveal-left">
+          <div class="badge" data-i18n="badge_concept">BEYOND BORDERS • GLOBAL SPACE INITIATIVE</div>
+          <h1 class="glow-text-cyan">
+            <span class="block-title" data-i18n="hero_title_1">Democratizing the</span>
+            <span class="gradient-text" data-i18n="hero_title_2">Cosmos for All</span>
+          </h1>
+          <p class="hero-tagline" data-i18n="hero_tagline">
+            The World Space Alliance (WSA) is a global grassroots collective opening the pathways of space exploration to candidates from every nation, background, and walk of life. Space belongs to humanity, not just superpowers.
+          </p>
+          <div class="hero-ctas">
+            <a href="#portal" class="btn btn-primary">
+              <span data-i18n="btn_apply">Join Candidate Pool</span>
+              <div class="btn-glow"></div>
+            </a>
+            <a href="#mission" class="btn btn-secondary" data-i18n="btn_mission">Explore Mission</a>
+          </div>
+        </div>
+        
+        <div class="hero-image-wrapper reveal">
+          <div class="hero-image-container">
+            <!-- Glowing Orbit Rings -->
+            <div class="hero-glow-ring-1"></div>
+            <div class="hero-glow-ring-2"></div>
+            
+            <!-- Floating Logo Image -->
+            <div class="hero-logo-center">
+              <img src="assets/logo.jpg" alt="World Space Alliance Emblem">
+            </div>
+            
+            <!-- Planet SVG details -->
+            <svg class="orbit-svg" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(0, 240, 255, 0.05)" stroke-width="0.5" />
+              <circle cx="20" cy="20" r="1.5" fill="#00f0ff" style="animation: spin-glow 20s infinite linear;" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="section-padding">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge" data-i18n="sec_mission_badge">CORE PILLARS</div>
+          <h2 class="gradient-text" data-i18n="sec_mission_title">Our Guiding Coordinates</h2>
+          <p data-i18n="sec_mission_desc">We stand on the principle that the stars belong to everyone. Here is how we are mapping the journey to democratized spaceflight.</p>
+        </div>
+        
+        <div class="mission-grid">
+          <!-- Card 1 -->
+          <div class="mission-card glass-panel reveal">
+            <div class="mission-card-icon">
+              <!-- Global Orbit Icon -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="pill_access_title">Equal Opportunity Access</h3>
+            <p data-i18n="pill_access_desc">Eliminating nationalistic, financial, and geopolitical hurdles. If you qualify physically, mentally, and technically, you have a flight pathway.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="mission-card glass-panel reveal" style="animation-delay: 0.15s;">
+            <div class="mission-card-icon">
+              <!-- Network/Collaboration Icon -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 data-i18n="pill_collab_title">Open-Border Cooperation</h3>
+            <p data-i18n="pill_collab_desc">Leveraging decentralized international partnerships to pool training resources, simulators, and space launches without territorial gatekeeping.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="mission-card glass-panel reveal" style="animation-delay: 0.3s;">
+            <div class="mission-card-icon">
+              <!-- Open Source Rocket Icon -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.5 16.5c-1.5 1.25-2.5 3.5-2.5 3.5s2.25-1 3.5-2.5"/>
+                <path d="M12 12l-6.5 6.5"/>
+                <path d="M12 2s-1 7 2 10 10 2 10 2-7-1-10-2z"/>
+                <path d="M9 15h.01"/>
+                <circle cx="17.5" cy="6.5" r="1"/>
+              </svg>
+            </div>
+            <h3 data-i18n="pill_tech_title">Open Source Aerospace</h3>
+            <p data-i18n="pill_tech_desc">Developing shared, open-source training curricula, safety parameters, and architectural frameworks to lower launch costs for all of humanity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Astronaut Pathway Section -->
+    <section id="pathway" class="section-padding" style="background: rgba(13, 11, 26, 0.3); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge" data-i18n="sec_path_badge">TRAINING & MISSION TIMELINE</div>
+          <h2 class="gradient-text" data-i18n="sec_path_title">The Astronaut Journey</h2>
+          <p data-i18n="sec_path_desc">Our decentralized framework transforms qualified citizen candidates into mission-ready spacefarers through a structured five-step path.</p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+          
+          <!-- Item 1 -->
+          <div class="timeline-item timeline-item-left reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel">
+              <span class="timeline-step" data-i18n="path_1_step">PHASE 01</span>
+              <h3 data-i18n="path_1_title">Registration & Skill Profiling</h3>
+              <p data-i18n="path_1_desc">Create your cosmic profile, log your scientific/technical expertise, and complete initial online cognitive assessments.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item timeline-item-right reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel">
+              <span class="timeline-step" data-i18n="path_2_step">PHASE 02</span>
+              <h3 data-i18n="path_2_title">Regional Physical Conditioning</h3>
+              <p data-i18n="path_2_desc">Undergo localized physical screening, endurance training, and scuba-based zero-gravity simulation modules with regional partner facilities.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item timeline-item-left reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel">
+              <span class="timeline-step" data-i18n="path_3_step">PHASE 03</span>
+              <h3 data-i18n="path_3_title">Analogue Missions & Simulation</h3>
+              <p data-i18n="path_3_desc">Participate in multi-week isolation simulations at analogue Martian bases, learning team dynamics, resource conservation, and extravehicular operations.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-item timeline-item-right reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel">
+              <span class="timeline-step" data-i18n="path_4_step">PHASE 04</span>
+              <h3 data-i18n="path_4_title">Suborbital Test Flights</h3>
+              <p data-i18n="path_4_desc">Graduate to suborbital flights and microgravity flight profiles, solidifying rocket integration, G-force tolerance, and instrument management.</p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="timeline-item timeline-item-left reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel">
+              <span class="timeline-step" data-i18n="path_5_step">PHASE 05</span>
+              <h3 data-i18n="path_5_title">Orbital Deployment & Beyond</h3>
+              <p data-i18n="path_5_desc">Assign to joint scientific research crews on collaborative space stations, deploying global civilian science projects into Earth's orbit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Candidate Portal Form Section -->
+    <section id="portal" class="section-padding">
+      <div class="container">
+        <div class="portal-layout">
+          <div class="portal-info reveal-left">
+            <div class="badge" data-i18n="sec_form_badge">ASTRONAUT REGISTRATION</div>
+            <h2 class="gradient-text" data-i18n="sec_form_title">Apply to the Alliance</h2>
+            <p data-i18n="sec_form_desc">The path to orbit begins with a single step. Register below to join the global database of future explorers and get notified when training centers open in your region.</p>
+            
+            <ul class="info-feature-list">
+              <li class="info-feature-item">
+                <div class="info-feature-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <div class="info-feature-text">
+                  <h4 style="color: #ffffff;">Inclusive Candidate Pooling</h4>
+                  <p>Open database matching skills against global launch mandates.</p>
+                </div>
+              </li>
+              <li class="info-feature-item">
+                <div class="info-feature-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <div class="info-feature-text">
+                  <h4 style="color: #ffffff;">Decentralized Curriculums</h4>
+                  <p>Get access to open-source preparatory training materials.</p>
+                </div>
+              </li>
+              <li class="info-feature-item">
+                <div class="info-feature-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <div class="info-feature-text">
+                  <h4 style="color: #ffffff;">No Financial Constraints</h4>
+                  <p>Fully funded training tracks funded by global collective sponsors.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="portal-form-panel glass-panel reveal-right">
+            <form id="candidate-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name" data-i18n="form_label_first">First Name</label>
+                  <input type="text" id="first-name" required data-i18n-placeholder="placeholder_first" placeholder="e.g., Neil">
+                </div>
+                <div class="form-group">
+                  <label for="last-name" data-i18n="form_label_last">Last Name</label>
+                  <input type="text" id="last-name" required data-i18n-placeholder="placeholder_last" placeholder="e.g., Armstrong">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="email" data-i18n="form_label_email">Email Address</label>
+                <input type="email" id="email" required data-i18n-placeholder="placeholder_email" placeholder="you@example.com">
+              </div>
+
+              <div class="form-group">
+                <label for="nationality" data-i18n="form_label_nation">Nationality</label>
+                <input type="text" id="nationality" required data-i18n-placeholder="placeholder_nation" placeholder="e.g., Taiwan, Canada, Kenya">
+              </div>
+
+              <div class="form-group">
+                <label for="specialty" data-i18n="form_label_specialty">Primary Area of Expertise</label>
+                <select id="specialty" required>
+                  <option value="" disabled selected data-i18n="spec_option_eng">Engineering / Systems</option>
+                  <option value="science" data-i18n="spec_option_sci">Biological & Physical Sciences</option>
+                  <option value="medicine" data-i18n="spec_option_med">Medical / Life Support</option>
+                  <option value="pilot" data-i18n="spec_option_pilot">Aviation / Robotics</option>
+                  <option value="humanities" data-i18n="spec_option_comm">Communications / Humanities</option>
+                  <option value="other" data-i18n="spec_option_other">Other Supporting Skills</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="experience" data-i18n="form_label_experience">Describe your motivation & background</label>
+                <textarea id="experience" rows="4" required data-i18n-placeholder="placeholder_experience" placeholder="Tell us about your background, why you want to go to space, and how you can support a diverse team..."></textarea>
+              </div>
+
+              <div class="checkbox-group">
+                <input type="checkbox" id="consent" required>
+                <label for="consent" data-i18n="form_label_consent">I consent to global cooperative training standards and share the vision of borderless exploration.</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn">
+                <span data-i18n="form_btn_submit">Launch My Application</span>
+                <div class="btn-glow"></div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Success Modal Popup -->
+  <div id="success-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-content glass-panel">
+      <div class="modal-icon">
+        <!-- Launching rocket vector -->
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2s-8 3-8 12c0 3 2.5 5 2.5 5h11s2.5-2 2.5-5c0-9-8-12-8-12z"/>
+          <path d="M12 15h.01"/>
+          <path d="M10 20c0 1.5 2 3 2 3s2-1.5 2-3"/>
+        </svg>
+      </div>
+      <h3 class="gradient-text" data-i18n="modal_title">Application Logged to Orbit</h3>
+      <p data-i18n="modal_desc">Thank you for registering with the World Space Alliance. Your profile has been added to our global database. Together, we will reach the stars.</p>
+      <button id="modal-close" class="btn btn-primary modal-close-btn" data-i18n="modal_close">Return to Earth</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-container">
+            <img src="assets/logo.jpg" alt="WSA Emblem" class="logo-img">
+            <div class="logo-title-group">
+              <span class="logo-text gradient-text">WSA</span>
+              <span class="logo-sub">WORLD SPACE ALLIANCE</span>
+            </div>
+          </div>
+          <p class="footer-brand-text" data-i18n="footer_tagline">Unifying humanity beyond borders, opening space exploration to every citizen of Earth.</p>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="GitHub">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links-group">
+          <h4 data-i18n="footer_col_links">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#home" data-i18n="nav_home">Home</a></li>
+            <li><a href="#mission" data-i18n="nav_mission">Mission</a></li>
+            <li><a href="#pathway" data-i18n="nav_pathway">Pathway</a></li>
+            <li><a href="#portal" data-i18n="nav_portal">Candidate Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4 data-i18n="footer_col_contact">Contact & Status</h4>
+          <p data-i18n="footer_contact_text">For partnerships and inquiries, contact us at: info@worldspacealliance.org</p>
+          <div class="newsletter-form">
+            <input type="email" data-i18n-placeholder="placeholder_email" placeholder="you@example.com" required aria-label="Newsletter Email">
+            <button class="btn btn-primary newsletter-btn" aria-label="Subscribe">📬</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span class="copyright" data-i18n="footer_copy">© 2026 World Space Alliance. All Rights Reserved.</span>
+        <span class="disclaimer-text" data-i18n="footer_disclaimer">
+          Status Notice: The World Space Alliance (WSA / 國際太空聯盟) is currently a grassroots NGO concept project and is not yet registered as a formal entity in any jurisdiction. All training plans and pathways represent futuristic design concepts.
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>

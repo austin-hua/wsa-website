@@ -1,0 +1,12 @@
+{
+  "name": "wsa-website",
+  "version": "1.0.0",
+  "description": "World Space Alliance Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y http-server -p 8080"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
